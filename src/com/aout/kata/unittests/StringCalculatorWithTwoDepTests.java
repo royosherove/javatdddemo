@@ -35,7 +35,7 @@ public class StringCalculatorWithTwoDepTests {
 
         sc.add("1");
 
-        assertEquals("got OutOfMemoryError", fakeWebService.written);
+        assertEquals("got java.lang.OutOfMemoryError", fakeWebService.written);
     }
 
     @Test

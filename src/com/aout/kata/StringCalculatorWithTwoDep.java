@@ -34,9 +34,17 @@ public class StringCalculatorWithTwoDep {
 
     private int parseSingleNumber(String numbers) throws Throwable {
         int result= Integer.parseInt(numbers);
-        this.logger.write("got " + result);
+        notifyLogger(result);
         return result;
 
+    }
+
+    private void notifyLogger(int result) throws Throwable {
+        try {
+            this.logger.write("got " + result);
+        } catch (Throwable throwable) {
+            service.write("got " + throwable.getClass().getName());
+        }
     }
 
     private boolean isMultipleNumbers(String numbers) {
