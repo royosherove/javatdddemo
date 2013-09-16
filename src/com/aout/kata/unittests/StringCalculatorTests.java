@@ -9,9 +9,23 @@ import static junit.framework.Assert.*;
 
 public class StringCalculatorTests {
 
+    private StringCalculator makeCalc() {
+        return new StringCalculator();
+    }
+
+    @Test
+    public void add_singleNumber_returnsThatNumber(){
+        StringCalculator sc = makeCalc();
+
+        int result = sc.add("1");
+
+        assertEquals(1, result);
+    }
+
+
     @Test
     public void add_emptyString_returnsZero(){
-        StringCalculator sc = new StringCalculator();
+        StringCalculator sc = makeCalc();
 
         int result = sc.add("");
 
