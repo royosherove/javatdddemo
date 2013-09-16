@@ -10,7 +10,7 @@ public class StringCalculatorWithOneDep {
         this.logger = logger;
     }
 
-    public int add(String numbers) throws InterruptedException {
+    public int add(String numbers) throws Throwable {
         if (numbers.contains("-")) {
             throw new IllegalArgumentException("no negatives");
         }
@@ -29,7 +29,7 @@ public class StringCalculatorWithOneDep {
         return !isMultipleNumbers(numbers);
     }
 
-    private int parseSingleNumber(String numbers) throws InterruptedException {
+    private int parseSingleNumber(String numbers) throws Throwable {
         int result= Integer.parseInt(numbers);
         this.logger.write("got " + result);
         return result;
