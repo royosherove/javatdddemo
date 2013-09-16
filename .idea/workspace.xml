@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b774e5d1-282e-42c0-9301-b5855bd9b049" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithOneDepTestsMockito.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithTwoDepTestsMockito.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithTwoDepTestsMockito.java" afterPath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithTwoDepTestsMockito.java" />
     </list>
     <ignored path="javatdddemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +21,8 @@
     <file path="/StringCalculatorWithTwoDepTests.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379366929865" ignored="false" />
     <file path="/FakeWebService.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379351087411" ignored="false" />
     <file path="/StringCalculatorWithOneDepTestsMockito.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379374773567" ignored="false" />
-    <file path="/StringCalculatorWithTwoDepTestsMockito.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379375336296" ignored="false" />
+    <file path="/StringCalculatorWithTwoDepTestsMockito.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379375718982" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379375742469" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +145,7 @@
       <file leaf-file-name="StringCalculatorWithTwoDepTestsMockito.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithTwoDepTestsMockito.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="39" selection-start="851" selection-end="851" vertical-scroll-proportion="0.5829244">
+            <state line="27" column="44" selection-start="860" selection-end="860" vertical-scroll-proportion="0.5829244">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -741,7 +740,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithTwoDepTestsMockito.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="39" selection-start="851" selection-end="851" vertical-scroll-proportion="0.5829244">
+        <state line="27" column="44" selection-start="860" selection-end="860" vertical-scroll-proportion="0.5829244">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

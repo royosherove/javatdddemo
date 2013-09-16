@@ -18,14 +18,14 @@ public class StringCalculatorWithTwoDepTestsMockito {
     @Test
     public void add_whenLoggerThrows_callsWebService() throws Throwable {
         Logger stubLogger = mock(Logger.class);
-        doThrow(new OutOfMemoryError()).when(stubLogger).write("got 1");
+        doThrow(new OutOfMemoryError()).when(stubLogger).write(anyString());
 
         WebService mockService = mock(WebService.class);
         StringCalculatorWithTwoDep sc = new StringCalculatorWithTwoDep(stubLogger, mockService);
 
         sc.add("1");
 
-        verify(mockService).write("got java.lang.OutOfMemoryError");
+        verify(mockService).write(contains("OutOfMemoryError"));
     }
 
     @Test
