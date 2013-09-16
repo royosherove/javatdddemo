@@ -1,7 +1,10 @@
 package com.aout.kata.unittests;
 
 import com.aout.kata.StringCalculator;
+import com.sun.javaws.exceptions.InvalidArgumentException;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import static junit.framework.Assert.*;
 
@@ -19,6 +22,21 @@ public class StringCalculatorTests {
         assertEquals(expected, result);
     }
 
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
+
+    @Test
+    public void add_negative_throws2() {
+        StringCalculator calc = makeCalc();
+
+        thrown.expect(IllegalArgumentException.class);
+        calc.add("-1");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void add_negative_throws1() {
+        makeCalc().add("-1");
+    }
     @Test
     public void add_multipleNumbers_returnstheSum(){
         assertAdding("1,2", 3);

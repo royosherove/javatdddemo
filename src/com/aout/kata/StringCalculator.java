@@ -1,12 +1,17 @@
 package com.aout.kata;
 
+import com.sun.javaws.exceptions.InvalidArgumentException;
+
 public class StringCalculator {
     public int add(String numbers) {
+        if (numbers.contains("-")) {
+        }
         if (isEmptyInput(numbers))
             return defaultValue();
 
         if (isSingleNumber(numbers))
             return parseSingleNumber(numbers);
+
         return 3;
     }
 
