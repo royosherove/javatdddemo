@@ -12,11 +12,11 @@ import static junit.framework.Assert.assertEquals;
 public class StringCalculatorWithTwoDepTests {
 
     private StringCalculatorWithTwoDep makeCalc() {
-        return new StringCalculatorWithOneDep(new FakeLogger());
+        return new StringCalculatorWithTwoDep(new FakeLogger(), new FakeWebService());
     }
 
     private void assertAdding(String numbers, int expected) throws InterruptedException {
-        StringCalculatorWithOneDep sc = makeCalc();
+        StringCalculatorWithTwoDep sc = makeCalc();
 
         int result = sc.add(numbers);
 
@@ -38,7 +38,7 @@ public class StringCalculatorWithTwoDepTests {
 
     @Test
     public void add_negative_throws2() throws InterruptedException {
-        StringCalculatorWithOneDep calc = makeCalc();
+        StringCalculatorWithTwoDep calc = makeCalc();
 
         thrown.expect(IllegalArgumentException.class);
         calc.add("-1");
