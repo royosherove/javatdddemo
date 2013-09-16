@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b774e5d1-282e-42c0-9301-b5855bd9b049" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aout/kata/StringCalculator.java" afterPath="$PROJECT_DIR$/src/com/aout/kata/StringCalculator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorTests.java" afterPath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorTests.java" />
     </list>
     <ignored path="javatdddemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,7 +11,7 @@
     <file path="/StringCalculatorTests.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379336105120" ignored="false" />
     <file path="/StringCalculatorTest.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379278416515" ignored="false" />
     <file path="/StringCalculator.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379335918830" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379336205298" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379336636752" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,7 @@
       <file leaf-file-name="StringCalculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/aout/kata/StringCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="30" selection-start="301" selection-end="301" vertical-scroll-proportion="0.41336116">
+            <state line="7" column="59" selection-start="249" selection-end="249" vertical-scroll-proportion="0.04592902">
               <folding />
             </state>
           </provider>
@@ -90,7 +89,7 @@
       <file leaf-file-name="StringCalculatorTests.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="7" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
+            <state line="43" column="0" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -641,7 +640,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="7" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
+        <state line="43" column="0" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -650,7 +649,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aout/kata/StringCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="301" selection-end="301" vertical-scroll-proportion="0.41336116">
+        <state line="7" column="59" selection-start="249" selection-end="249" vertical-scroll-proportion="0.04592902">
           <folding />
         </state>
       </provider>

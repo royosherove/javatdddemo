@@ -5,6 +5,7 @@ import com.sun.javaws.exceptions.InvalidArgumentException;
 public class StringCalculator {
     public int add(String numbers) {
         if (numbers.contains("-")) {
+            throw new IllegalArgumentException("no negatives");
         }
         if (isEmptyInput(numbers))
             return defaultValue();
