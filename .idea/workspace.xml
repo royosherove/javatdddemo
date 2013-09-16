@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b774e5d1-282e-42c0-9301-b5855bd9b049" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aout/kata/StringCalculatorWithTwoDep.java" afterPath="$PROJECT_DIR$/src/com/aout/kata/StringCalculatorWithTwoDep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithTwoDepTests.java" afterPath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithTwoDepTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="javatdddemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,9 +18,8 @@
     <file path="/LoggerImpl.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379337796922" ignored="false" />
     <file path="/StringCalculatorWithTwoDep.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379351589171" ignored="false" />
     <file path="/WebService.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379339818565" ignored="false" />
-    <file path="/StringCalculatorWithTwoDepTests.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379351301836" ignored="false" />
+    <file path="/StringCalculatorWithTwoDepTests.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379366929865" ignored="false" />
     <file path="/FakeWebService.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379351087411" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379351643169" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +124,7 @@
       <file leaf-file-name="StringCalculatorWithTwoDepTests.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithTwoDepTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="36" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.33182845">
+            <state line="37" column="35" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.57605493">
               <folding />
             </state>
           </provider>
@@ -213,8 +211,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="874" />
+    <option name="width" value="2560" />
+    <option name="height" value="1414" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -281,28 +279,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="kata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javatdddemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javatdddemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unittests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -530,7 +506,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <frame x="0" y="22" width="2560" height="1414" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -547,8 +523,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6706349" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32936507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13802704" sideWeight="0.8078704" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19212963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -737,7 +713,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithTwoDepTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="36" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.33182845">
+        <state line="37" column="35" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.57605493">
           <folding />
         </state>
       </provider>
