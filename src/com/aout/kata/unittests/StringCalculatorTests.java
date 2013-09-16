@@ -1,7 +1,6 @@
 package com.aout.kata.unittests;
 
 import com.aout.kata.StringCalculator;
-import junit.framework.Assert;
 import org.junit.Test;
 
 import static junit.framework.Assert.*;
@@ -12,23 +11,28 @@ public class StringCalculatorTests {
     private StringCalculator makeCalc() {
         return new StringCalculator();
     }
+    private void assertAdding(String numbers, int expected) {
+        StringCalculator sc = makeCalc();
+
+        int result = sc.add(numbers);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void add_multipleNumbers_returnstheSum(){
+        assertAdding("1,2", 3);
+    }
 
     @Test
     public void add_singleNumber_returnsThatNumber(){
-        StringCalculator sc = makeCalc();
-
-        int result = sc.add("1");
-
-        assertEquals(1, result);
+        assertAdding("1", 1);
     }
+
 
 
     @Test
     public void add_emptyString_returnsZero(){
-        StringCalculator sc = makeCalc();
-
-        int result = sc.add("");
-
-        assertEquals(0, result);
+        assertAdding("",0);
     }
 }
