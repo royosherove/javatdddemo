@@ -18,7 +18,7 @@ public class StringCalculatorWithOneDepTestsJMock {
         Logger mockLog = context.mock(Logger.class);
         StringCalculatorWithOneDep sc = new StringCalculatorWithOneDep(mockLog);
 
-        sc.add("1"); //BANG!
+        //sc.add("1"); //BANG!
     }
 
 }
