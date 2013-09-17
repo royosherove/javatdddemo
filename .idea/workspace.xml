@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b774e5d1-282e-42c0-9301-b5855bd9b049" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithOneDepTestsEasyMock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javatdddemo.iml" afterPath="$PROJECT_DIR$/javatdddemo.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithOneDepTestsJMock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithOneDepTestsEasyMock.java" afterPath="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithOneDepTestsEasyMock.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="javatdddemo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379418357174" ignored="false" />
-    <file path="/fragment.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379424291036" ignored="false" />
+    <file path="/fragment.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379426117946" ignored="false" />
     <file path="/StringCalculatorTests.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379418126429" ignored="false" />
     <file path="/StringCalculatorTest.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379278416515" ignored="false" />
     <file path="/StringCalculator.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379418229034" ignored="false" />
@@ -38,6 +38,7 @@
     <file path="$USER_HOME$/javadrills/src/javadrills/User.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379420476364" ignored="false" />
     <file path="/User.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379420474648" ignored="false" />
     <file path="/StringCalculatorWithOneDepTestsEasyMock.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379425384836" ignored="false" />
+    <file path="/StringCalculatorWithOneDepTestsJMock.java" changelist="b774e5d1-282e-42c0-9301-b5855bd9b049" time="1379426183509" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,13 +113,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringCalculatorWithOneDepTestsEasyMock.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StringCalculatorWithOneDepTestsEasyMock.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithOneDepTestsEasyMock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="20" selection-start="621" selection-end="621" vertical-scroll-proportion="0.7236842">
+            <state line="20" column="10" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringCalculatorWithOneDepTestsJMock.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithOneDepTestsJMock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="0.7113164">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -201,7 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/aout/kata/Logger.java" />
         <option value="$PROJECT_DIR$/src/com/aout/kata/LoggerImpl.java" />
         <option value="$PROJECT_DIR$/src/com/aout/kata/WebService.java" />
         <option value="$PROJECT_DIR$/src/com/aout/kata/unittests/FakeWebService.java" />
@@ -216,6 +225,7 @@
         <option value="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorTests.java" />
         <option value="$PROJECT_DIR$/src/com/aout/kata/LoginManager.java" />
         <option value="$PROJECT_DIR$/src/com/aout/kata/User.java" />
+        <option value="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithOneDepTestsJMock.java" />
         <option value="$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithOneDepTestsEasyMock.java" />
       </list>
     </option>
@@ -563,7 +573,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -579,7 +589,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31994262" sideWeight="0.6706349" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31994262" sideWeight="0.6706349" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32936507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -656,13 +666,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/aout/kata/LoggerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aout/kata/unittests/FakeWebService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="4" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
@@ -769,10 +772,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithOneDepTestsEasyMock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="621" selection-end="621" vertical-scroll-proportion="0.7236842">
+        <state line="20" column="10" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aout/kata/unittests/StringCalculatorWithOneDepTestsJMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="0.7113164">
+          <folding />
         </state>
       </provider>
     </entry>
