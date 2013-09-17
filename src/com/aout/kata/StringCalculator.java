@@ -35,4 +35,16 @@ public class StringCalculator {
     private boolean isEmptyInput(String numbers) {
         return numbers.length()==0;
     }
+
+    public int subtract(int howMuch, int from) {
+        return from - howMuch;
+    }
+
+    public int parse(String numbers) {
+        if (numbers.length() == 0) {
+            return 0;
+        }
+        return Integer.parseInt(numbers);
+
+    }
 }
