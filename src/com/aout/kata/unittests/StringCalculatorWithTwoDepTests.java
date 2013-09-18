@@ -31,7 +31,8 @@ public class StringCalculatorWithTwoDepTests {
 
         FakeWebService fakeWebService = new FakeWebService();
 
-        StringCalculatorWithTwoDep sc = new StringCalculatorWithTwoDep(fakeLogger,fakeWebService);
+        StringCalculatorWithTwoDep sc =
+            new StringCalculatorWithTwoDep(fakeLogger,fakeWebService);
 
         sc.add("1");
 

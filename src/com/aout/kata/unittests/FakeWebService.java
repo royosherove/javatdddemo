@@ -10,3 +10,5 @@ public class FakeWebService implements WebService {
         written = text;
     }
 }
+
+
