@@ -1,14 +1,23 @@
 package com.aout.kata;
 
+import com.aout.kata.unittests.StringCalculatorTests;
 import com.sun.javaws.exceptions.InvalidArgumentException;
 
 public class StringCalculator {
-    public int add(String numbers) {
+    private Logger log;
+
+    public StringCalculator(Logger log) {
+        this.log = log;
+    }
+
+    public int add(String numbers) throws Throwable {
         if (numbers.contains("-")) {
             throw new IllegalArgumentException("no negatives");
         }
-        if (isEmptyInput(numbers))
+        if (isEmptyInput(numbers)){
+            log.write("got " + defaultValue());
             return defaultValue();
+        }
 
         if (isSingleNumber(numbers))
             return parseSingleNumber(numbers);

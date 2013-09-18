@@ -1,5 +1,6 @@
 package com.aout.kata.unittests;
 
+import com.aout.kata.Logger;
 import com.aout.kata.StringCalculator;
 import com.sun.javaws.exceptions.InvalidArgumentException;
 import org.junit.Rule;
@@ -12,10 +13,10 @@ import static junit.framework.Assert.*;
 public class StringCalculatorTests {
 
     private StringCalculator makeCalc() {
-        return new StringCalculator();
+        return new StringCalculator(new TheFakeLogger());
     }
 
-    private void assertAdding(String numbers, int expected) {
+    private void assertAdding(String numbers, int expected) throws Throwable {
         StringCalculator sc = makeCalc();
 
         int result = sc.add(numbers);
@@ -23,6 +24,31 @@ public class StringCalculatorTests {
         assertEquals(expected, result);
     }
 
+    class TheFakeLogger implements Logger {
+        public String written;
+        private Throwable error;
+
+        public void write(String text) throws Throwable {
+            written = text;
+            if (error != null) {
+                throw error;
+            }
+        }
+
+        public void willThrow(Throwable error) {
+            this.error = error;
+        }
+    }
+
+    @Test
+    public void add_always_callsLogger() throws Throwable {
+        TheFakeLogger mockLog = new TheFakeLogger();
+        StringCalculator sc = new StringCalculator(mockLog);
+
+        sc.add("");
+
+        assertEquals("got 0", mockLog.written);
+    }
 
 
     @Test
@@ -80,7 +106,7 @@ public class StringCalculatorTests {
     public ExpectedException thrown = ExpectedException.none();
 
     @Test
-    public void add_negative_throws2() {
+    public void add_negative_throws2() throws Throwable {
         StringCalculator calc = makeCalc();
 
         thrown.expect(IllegalArgumentException.class);
@@ -88,7 +114,7 @@ public class StringCalculatorTests {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void add_negative_throws1() {
+    public void add_negative_throws1() throws Throwable {
         makeCalc().add("-1");
     }
 
@@ -106,19 +132,19 @@ public class StringCalculatorTests {
 
     }
     @Test
-    public void add_multipleNumbers_returnstheSum(){
+    public void add_multipleNumbers_returnstheSum() throws Throwable {
         assertAdding("1,2", 3);
     }
 
     @Test
-    public void add_singleNumber_returnsThatNumber(){
+    public void add_singleNumber_returnsThatNumber() throws Throwable {
         assertAdding("1", 1);
     }
 
 
 
     @Test
-    public void add_emptyString_returnsZero(){
+    public void add_emptyString_returnsZero() throws Throwable {
         assertAdding("",0);
     }
 }
