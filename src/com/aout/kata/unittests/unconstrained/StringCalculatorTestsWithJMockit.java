@@ -14,7 +14,8 @@ public class StringCalculatorTestsWithJMockit {
         new NonStrictExpectations() {
            StaticLogger logger;
             {
-                StaticLogger.write(anyString());
+                StaticLogger.write(anyString);
+
             }};
 
         StringCalculatorWithStatics sc =
@@ -23,7 +24,7 @@ public class StringCalculatorTestsWithJMockit {
         sc.add("1");
 
         new Verifications(){{
-            StaticLogger.write("got 1");
+            StaticLogger.write(withSubstring("got 1"));
         }};
     }
 
@@ -33,12 +34,12 @@ public class StringCalculatorTestsWithJMockit {
         new NonStrictExpectations() {
            StaticLogger logger;
             {
-                StaticLogger.write("got 1");
+                StaticLogger.write(anyString);
                 result = new OutOfMemoryError();
             }
             StaticWebService service;
             {
-                StaticWebService.notify("got error");
+                StaticWebService.notify(anyString);
             }
         };
 
@@ -48,7 +49,7 @@ public class StringCalculatorTestsWithJMockit {
         sc.add("1");
 
         new Verifications(){{
-            StaticWebService.notify("got error");
+            StaticWebService.notify(withSubstring("got error"));
         }};
     }
 }
