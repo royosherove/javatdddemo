@@ -28,7 +28,7 @@ public class StringCalculatorWithStatics {
         try {
             StaticLogger.write("got " + result);
         } catch (Throwable throwable) {
-            throwable.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            StaticWebService.notify("got error");
         }
         return result;
     }
