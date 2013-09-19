@@ -3,6 +3,7 @@ package com.aout.kata.unittests;
 import com.aout.kata.Logger;
 import com.aout.kata.StringCalculator;
 import com.aout.kata.StringCalculatorWithOneDep;
+import com.aout.kata.TraceMessage;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -16,6 +17,8 @@ public class StringCalculatorWithOneDepTests {
     class MyFakeLogger implements Logger {
         public String written;
 
+        public void writeMessage(TraceMessage text) {
+        }
         public void write(String text) {
             written = text;
         }

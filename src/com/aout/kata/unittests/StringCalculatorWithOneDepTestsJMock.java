@@ -17,10 +17,10 @@ public class StringCalculatorWithOneDepTestsJMock {
     public void add_whenCalled_callsLogger() throws Throwable {
         Mockery context = new Mockery();
         final Logger mockLog = context.mock(Logger.class);
+
         context.checking(new Expectations(){{
-            allowing(mockLog).write(with(any(String.class)));
-        }
-        });
+            atLeast(1).of(mockLog).write(with(any(String.class)));
+        }});
 
         StringCalculatorWithOneDep sc =
                 new StringCalculatorWithOneDep(mockLog);

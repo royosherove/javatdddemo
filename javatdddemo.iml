@@ -34,6 +34,19 @@
         <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/libs/powermock-mockito-junit-1.5.1" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/libs/powermock-mockito-junit-1.5.1" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/libs/powermock-mockito-junit-1.5.1" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/libs/powermock-mockito-junit-1.5.1" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
 </module>
 

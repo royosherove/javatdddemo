@@ -2,6 +2,7 @@ package com.aout.kata.unittests;
 
 import com.aout.kata.Logger;
 import com.aout.kata.StringCalculator;
+import com.aout.kata.TraceMessage;
 import com.sun.javaws.exceptions.InvalidArgumentException;
 import org.junit.Rule;
 import org.junit.Test;
@@ -28,6 +29,8 @@ public class StringCalculatorTests {
         public String written;
         private Throwable error;
 
+        public void writeMessage(TraceMessage text) {
+        }
         public void write(String text) throws Throwable {
             written = text;
             if (error != null) {

@@ -16,12 +16,12 @@ public class StringCalculatorWithOneDepTestsEasyMock {
     @Test
     public void add_whenCalled_callsLogger() throws Throwable {
 
-        //Logger mockLog = createNiceMock(Logger.class);
-        Logger mockLog = createMock(Logger.class);
+        Logger mockLog = createNiceMock(Logger.class);
+
         StringCalculatorWithOneDep sc = new StringCalculatorWithOneDep(mockLog);
 
-        //replay(mockLog);
-        sc.add("1"); //BANG!
+        replay(mockLog);
+        sc.add("1");
     }
 
 }

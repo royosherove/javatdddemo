@@ -14,6 +14,7 @@ public class StringCalculatorWithTwoDep {
     }
 
     public int add(String numbers) throws Throwable {
+        logger.writeMessage(new TraceMessage(100,"message"));
         if (numbers.contains("-")) {
             throw new IllegalArgumentException("no negatives");
         }
