@@ -3,11 +3,21 @@ package com.aout.kata;
 import com.aout.kata.unittests.StringCalculatorTests;
 import com.sun.javaws.exceptions.InvalidArgumentException;
 
+import java.util.Date;
+
 public class StringCalculator {
     private Logger log;
 
     public StringCalculator(Logger log) {
         this.log = log;
+    }
+
+    public String GetMessageWithDate() {
+        return getTime() + " some message";
+    }
+
+    protected long getTime() {
+        return new Date().getTime();
     }
 
     public int add(String numbers) throws Throwable {
