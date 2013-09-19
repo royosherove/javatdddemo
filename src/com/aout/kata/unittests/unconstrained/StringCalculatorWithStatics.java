@@ -26,11 +26,16 @@ public class StringCalculatorWithStatics {
         int result= Integer.parseInt(numbers);
 
         try {
-            StaticLogger.write("got " + result);
+            String text = "got " + result;
+            callLogger(text);
         } catch (Throwable throwable) {
             StaticWebService.notify("got error");
         }
         return result;
+    }
+
+    protected void callLogger(String text) throws Throwable {
+        StaticLogger.write(text);
     }
 
     private boolean isMultipleNumbers(String numbers) {

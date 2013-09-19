@@ -15,7 +15,6 @@ public class StringCalculatorTestsWithJMockit {
            StaticLogger logger;
             {
                 StaticLogger.write(anyString);
-
             }};
 
         StringCalculatorWithStatics sc =
