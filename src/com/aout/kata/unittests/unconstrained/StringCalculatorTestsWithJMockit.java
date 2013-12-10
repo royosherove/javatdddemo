@@ -1,53 +1,34 @@
 package com.aout.kata.unittests.unconstrained;
 
-import mockit.NonStrictExpectations;
-import mockit.Verifications;
-import org.junit.Test;
-
-import static org.mockito.Matchers.anyString;
+import mockit.*;
+import org.junit.*;
 
 public class StringCalculatorTestsWithJMockit {
+
+    @Tested StringCalculatorWithStatics sc;
+    @Mocked StaticLogger logger;
 
     @Test
     public void add_always_callsStaticLogger() throws Throwable {
 
-        new NonStrictExpectations() {
-           StaticLogger logger;
-            {
-                StaticLogger.write(anyString);
-            }};
-
-        StringCalculatorWithStatics sc =
-                new StringCalculatorWithStatics();
-
         sc.add("1");
 
-        new Verifications(){{
+        new Verifications() {{
             StaticLogger.write(withSubstring("got 1"));
         }};
     }
 
     @Test
-    public void add_loggerThrows_callsStaticWebService() throws Throwable {
+    public void add_loggerThrows_callsStaticWebService(@Mocked StaticWebService service) throws Throwable {
 
-        new NonStrictExpectations() {
-           StaticLogger logger;
-            {
-                StaticLogger.write(anyString);
-                result = new OutOfMemoryError();
-            }
-            StaticWebService service;
-            {
-                StaticWebService.notify(anyString);
-            }
-        };
-
-        StringCalculatorWithStatics sc =
-                new StringCalculatorWithStatics();
+        new NonStrictExpectations() {{
+            StaticLogger.write(anyString);
+            result = new OutOfMemoryError();
+        }};
 
         sc.add("1");
 
-        new Verifications(){{
+        new Verifications() {{
             StaticWebService.notify(withSubstring("got error"));
         }};
     }
